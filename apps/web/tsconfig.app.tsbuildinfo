@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/types.ts","./src/components/commandpalette.tsx","./src/components/modelreport.tsx","./src/components/sourceinspector.tsx","./src/lib/api.ts","./src/lib/firebase.ts"],"version":"5.9.3"}

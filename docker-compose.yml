@@ -1,0 +1,33 @@
+services:
+  finite-feed:
+    build: .
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    environment:
+      NODE_ENV: production
+      SESSION_SECRET: local-docker-finite-feed-session-secret-not-for-public-deployment
+      PORT: 8080
+      PUBLIC_APP_URL: http://localhost:8080
+      ALLOWED_ORIGINS: http://localhost:8080
+      OLLAMA_BASE_URL: http://ollama:11434
+      STORAGE_DRIVER: file
+      DATA_FILE: /app/apps/api/data/briefings.json
+    volumes:
+      - finite_feed_data:/app/apps/api/data
+    depends_on:
+      - ollama
+    restart: unless-stopped
+
+  ollama:
+    image: ollama/ollama:latest
+    volumes:
+      - ollama_data:/root/.ollama
+    ports:
+      - "11434:11434"
+    restart: unless-stopped
+
+volumes:
+  finite_feed_data:
+  ollama_data:
