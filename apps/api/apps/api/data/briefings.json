@@ -1,6 +1,242 @@
 {
   "77e4683cfee10393828b8e6de662cd92ab85ce8a": [
     {
+      "id": "briefing_1789542204148_0cc2db53",
+      "userId": "guest:BAQ8kzXrv8kSNuhdhGU9mEed",
+      "createdAt": "2026-09-16T07:03:24.148Z",
+      "timestamp": 1789542204148,
+      "subreddits": "r/technology, r/claude, r/llms",
+      "targets": [
+        "technology",
+        "claude",
+        "llms"
+      ],
+      "focusQuery": "What actually changed today, what matters, and what is just noise?",
+      "mode": "single",
+      "models": [
+        "qwen3.5:4b"
+      ],
+      "sourceMode": "demo",
+      "sources": [
+        {
+          "id": "r/MachineLearning:demo-ai-agent-security:0",
+          "postId": "demo-ai-agent-security",
+          "subreddit": "r/MachineLearning",
+          "title": "Teams are shifting from agent demos to evaluation and guardrails",
+          "text": "Title: Teams are shifting from agent demos to evaluation and guardrails Content: Discussion focuses on traceable tool calls, constrained permissions, regression suites, and explicit failure handling before autonomous agents are allowed into business workflows.",
+          "url": "https://www.reddit.com/r/MachineLearning/",
+          "author": "finite_feed_demo",
+          "upvotes": 1842,
+          "comments": 267,
+          "createdUtc": 1789527302,
+          "lexicalScore": 0.19478793969207764,
+          "bm25Score": 1,
+          "engagementScore": 1,
+          "freshnessScore": 0.9174674123189573,
+          "rankScore": 0.6229998452438724,
+          "tokens": [
+            "title",
+            "teams",
+            "are",
+            "shifting",
+            "agent",
+            "demos",
+            "evaluation",
+            "and",
+            "guardrails",
+            "content",
+            "discussion",
+            "focuses",
+            "traceable",
+            "tool",
+            "calls",
+            "constrained",
+            "permissions",
+            "regression",
+            "suites",
+            "and",
+            "explicit",
+            "failure",
+            "handling",
+            "autonomous",
+            "agents",
+            "are",
+            "allowed",
+            "business",
+            "workflows"
+          ],
+          "counts": {},
+          "length": 29
+        },
+        {
+          "id": "r/LanguageTechnology:demo-rag-citations:0",
+          "postId": "demo-rag-citations",
+          "subreddit": "r/LanguageTechnology",
+          "title": "Citation validation matters more than cosmetic source badges",
+          "text": "Title: Citation validation matters more than cosmetic source badges Content: A recurring recommendation is to assign evidence IDs before generation, force structured outputs, and validate every returned citation against the retrieval ledger instead of mapping model claims to sources after the fact.",
+          "url": "https://www.reddit.com/r/LanguageTechnology/",
+          "author": "finite_feed_demo",
+          "upvotes": 921,
+          "comments": 88,
+          "createdUtc": 1789484102,
+          "lexicalScore": 0.21453384554407107,
+          "bm25Score": 1,
+          "engagementScore": 0.8687047064228857,
+          "freshnessScore": 0.7145243391564995,
+          "rankScore": 0.5922143632389121,
+          "tokens": [
+            "title",
+            "citation",
+            "validation",
+            "matters",
+            "cosmetic",
+            "source",
+            "badges",
+            "content",
+            "recurring",
+            "recommendation",
+            "assign",
+            "evidence",
+            "ids",
+            "generation",
+            "force",
+            "structured",
+            "outputs",
+            "and",
+            "validate",
+            "every",
+            "returned",
+            "citation",
+            "the",
+            "retrieval",
+            "ledger",
+            "instead",
+            "mapping",
+            "model",
+            "claims",
+            "sources",
+            "the",
+            "fact"
+          ],
+          "counts": {},
+          "length": 32
+        },
+        {
+          "id": "r/LocalLLaMA:demo-local-models:0",
+          "postId": "demo-local-models",
+          "subreddit": "r/LocalLLaMA",
+          "title": "Local inference stacks are becoming easier to operationalize",
+          "text": "Title: Local inference stacks are becoming easier to operationalize Content: Users compare smaller quantized models, hosted inference, Ollama, observability, structured outputs, and model routing. The most practical setups separate the application API from the inference runtime.",
+          "url": "https://www.reddit.com/r/LocalLLaMA/",
+          "author": "finite_feed_demo",
+          "upvotes": 1290,
+          "comments": 194,
+          "createdUtc": 1789516502,
+          "lexicalScore": 0.054554148071326206,
+          "bm25Score": 0.3661047688336987,
+          "engagementScore": 0.9491018527704256,
+          "freshnessScore": 0.8618808718381058,
+          "rankScore": 0.3673930466319708,
+          "tokens": [
+            "title",
+            "local",
+            "inference",
+            "stacks",
+            "are",
+            "becoming",
+            "easier",
+            "operationalize",
+            "content",
+            "users",
+            "compare",
+            "smaller",
+            "quantized",
+            "models",
+            "hosted",
+            "inference",
+            "ollama",
+            "observability",
+            "structured",
+            "outputs",
+            "and",
+            "model",
+            "routing",
+            "the",
+            "practical",
+            "setups",
+            "separate",
+            "the",
+            "application",
+            "api",
+            "the",
+            "inference",
+            "runtime"
+          ],
+          "counts": {},
+          "length": 33
+        }
+      ],
+      "modelOutputs": {
+        "qwen3.5:4b": {
+          "model": "qwen3.5:4b",
+          "title": "Grounded retrieval fallback",
+          "executiveSummary": "Inference failed: Model did not return the required JSON insight schema.. FINITE_FEED is showing the strongest retrieved evidence directly rather than presenting a fabricated model synthesis.",
+          "insights": [
+            {
+              "text": "Teams are shifting from agent demos to evaluation and guardrails. Teams are shifting from agent demos to evaluation and guardrails Content: Discussion focuses on traceable tool calls, constrained permissions, regression suites, and explicit failure handling before autonomous agents are allowed into business workflows.",
+              "sourceIds": [
+                "r/MachineLearning:demo-ai-agent-security:0"
+              ]
+            },
+            {
+              "text": "Citation validation matters more than cosmetic source badges. Citation validation matters more than cosmetic source badges Content: A recurring recommendation is to assign evidence IDs before generation, force structured outputs, and validate every returned citation against the retrieval ledger instead of mapping model claims to sources after the fact.",
+              "sourceIds": [
+                "r/LanguageTechnology:demo-rag-citations:0"
+              ]
+            },
+            {
+              "text": "Local inference stacks are becoming easier to operationalize. Local inference stacks are becoming easier to operationalize Content: Users compare smaller quantized models, hosted inference, Ollama, observability, structured outputs, and model routing. The most practical setups separate the application API from the inference runtime.",
+              "sourceIds": [
+                "r/LocalLLaMA:demo-local-models:0"
+              ]
+            }
+          ],
+          "parseMode": "deterministic-fallback",
+          "fallbackReason": "Inference failed: Model did not return the required JSON insight schema..",
+          "metrics": {
+            "latencyMs": 0,
+            "fallback": true,
+            "citationCoverage": 1,
+            "citedInsightCount": 3,
+            "insightCount": 3
+          }
+        }
+      },
+      "retrieval": {
+        "chunkCount": 3,
+        "selectedCount": 3,
+        "queries": [
+          "What actually changed today, what matters, and what is just noise?",
+          "announcement launch release update breakthrough",
+          "debate controversy risk criticism discussion",
+          "adoption benchmark performance community reaction"
+        ],
+        "weights": {
+          "tfidf": 0.46,
+          "bm25": 0.28,
+          "engagement": 0.18,
+          "freshness": 0.08
+        }
+      },
+      "timings": {
+        "sourceFetchMs": 127,
+        "retrievalMs": 0,
+        "inferenceMs": 17464,
+        "persistenceMs": 6,
+        "totalMs": 17597
+      }
+    },
+    {
       "id": "briefing_1789541849094_bb2de4af",
       "userId": "guest:BAQ8kzXrv8kSNuhdhGU9mEed",
       "createdAt": "2026-09-16T06:57:29.094Z",

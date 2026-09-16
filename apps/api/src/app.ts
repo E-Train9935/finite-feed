@@ -2,7 +2,10 @@ import cors from 'cors';
 import express, { type NextFunction, type Request, type Response } from 'express';
 import rateLimit from 'express-rate-limit';
 import helmet from 'helmet';
-import { pinoHttp } from 'pino-http';
+import pinoHttpModule from 'pino-http';
+
+const pinoHttp =
+  pinoHttpModule as unknown as typeof import('pino-http').pinoHttp;
 import { existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { ZodError } from 'zod';
